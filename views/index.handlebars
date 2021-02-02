@@ -3,30 +3,30 @@
 <h2 id="notHungry">Not hungry yet</h2>
 
 <ul>
-    {{#each burgerss}}
-    {{#unless devoured}}
-    {{> burgers/burger-block sleep=true}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2 id="yum">Yummy!</h2>
-
-<ul>
     {{#each burgers}}
-    {{#if sleepy}}
-    {{> burgers/burger_block sleep=false}}
+    {{#if devoured}}
+    {{> burgers/burger-block devoured=true}}
     {{/if}}
     {{/each}}
 </ul>
 
-<form class="create-form">
+<h2 id="yum">Yummy!</h2>
+{{!-- make two columns --}}
+<ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{> burgers/burger-block devoured=false}}
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<form id="create-form">
 
     <div class="form-group">
         <label for="submit">Enter in a burger you would like to eat!</label>
-        <input type="text" id="submitBurger" name="name">
+        <input type="text" id="submitBurgerForm" name="name">
     </div>
 
 
-    <button type="submit">Add Burger</button>
+    <button id="submitBurger" type="submit">Add Burger</button>
 </form>

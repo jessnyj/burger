@@ -1,7 +1,6 @@
 // Import MySQL connection.
 const connection = require('./connection.js');
 
-// Helper function for SQL syntax to add question marks (?, ?, ?) in query
 const printQuestionMarks = (num) => {
     const arr = [];
 
@@ -76,19 +75,6 @@ const orm = {
         queryString += condition;
 
         console.log(queryString);
-        connection.query(queryString, (err, result) => {
-            if (err) {
-                throw err;
-            }
-
-            cb(result);
-        });
-    },
-    delete(table, condition, cb) {
-        let queryString = `DELETE FROM ${table}`;
-        queryString += ' WHERE ';
-        queryString += condition;
-
         connection.query(queryString, (err, result) => {
             if (err) {
                 throw err;

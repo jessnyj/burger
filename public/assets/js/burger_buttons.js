@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             e.preventDefault();
 
             // Grabs the value of the textarea that goes by the name, "quote"
-            const newCat = {
-                burger_name: document.getElementById('submitBurger').value.trim(),
+            const newBurger = {
+                burger_name: document.getElementById('submitBurgerForm').value.trim(),
+                devoured: false
             };
-
+            console.log(newBurger);
             // Send POST request to create a new quote
             fetch('/api/burgers', {
                 method: 'POST',
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 body: JSON.stringify(newBurger),
             }).then(() => {
                 // Empty the form
-                document.getElementById('submitBurger').value = '';
+                document.getElementById('submitBurgerForm').value = '';
 
                 // Reload the page so the user can see the new quote
                 console.log('New burger Added!');
@@ -34,3 +35,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
     }
+})

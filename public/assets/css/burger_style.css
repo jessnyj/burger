@@ -21,3 +21,11 @@ li {
 h1 {
     text-align: center;
 }
+
+#notHungry {
+    text-align: left;
+}
+
+#yum {
+    text-align: right;
+}

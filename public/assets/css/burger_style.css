@@ -43,3 +43,10 @@ h1 {
     margin-right: 25%;
     display: block;  
 }
+
+#submitBurger {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

@@ -9,9 +9,9 @@
             <h2 id="notHungry">Not hungry yet</h2>
             <ol>
                 {{#each burgers}}
-                {{#if devoured}}
+                {{#unless devoured}}
                 {{> burgers/burger-block devour=true}}
-                {{/if}}
+                {{/unless}}
                 {{/each}}
             </ol>
         </div>
@@ -20,9 +20,9 @@
             <h2 id="yum">Yummy!</h2>
             <ol>
                 {{#each burgers}}
-                {{#unless devoured}}
+                {{#if devoured}}
                 {{> burgers/burger-block devour=false}}
-                {{/unless}}
+                {{/if}}
                 {{/each}}
             </ol>
         </div>

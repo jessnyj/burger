@@ -30,12 +30,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 }).then((response) => {
                     // Check that the response is all good
                     // Reload the page so the user can see the new quote
-                    if (response.ok) {
-                        console.log(`changed not hungry to: ${newBurger}`);
+                        console.log(response);
                         location.reload('/');
-                    } else {
-                        alert('something went wrong!');
-                    }
+                    
                 });
             });
         });

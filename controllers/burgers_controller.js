@@ -1,6 +1,7 @@
-var express = require("express");
-var burger = require("../models/burger.js");
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const burger = require("../models/burger.js");
+
 
 // Create all our routes and set up logic within those routes where required.
 router.get('/', (req, res) => {

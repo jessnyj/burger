@@ -1,8 +1,12 @@
 <li>
 	{{burger_name}}
-	<button class="devour-it" data-id="{{id}}" data-newsleep="{{sleep}}">
-		{{#if sleep}}SLEEP TIME!{{else}}WAKE UP!{{/if}}
-	</button>
 
-	<button class="devour-it" data-id="{{this.id}}">Devour it!</button>
+	<button class="devour-it" data-id="{{id}}" data-hungry="{{hungry}}">
+		{{#if hungry}}Devour It!{{/if}}
+	</button>
 </li>
+
+
+
+{{!-- 
+	<button class="devour-it" data-id="{{this.id}}">Devour it!</button> --}}

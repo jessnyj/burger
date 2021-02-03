@@ -4,7 +4,8 @@
 
 ## Table of Contents
 * [Title](#title)
-* [Demo](#demo)
+* [Deployed Link](#deployed-link)
+* [Site Picture](#site-picture)
 * [Technologies Used](#technologies-used)
 * [Description](#description)
 * [Usage](#usage)
@@ -15,26 +16,27 @@
 * [Questions](#questions)
 * [Acknowledgments](#acknowledgments)
 
-## Dployed Link
+## Deployed Link
 * Click this link to view the site.
-[Demo]()
+[Demo](https://burger-eater70.herokuapp.com/)
+
+## Site Picture
+[Site]()
 
 ## Technologies Used
 * javascript
+* CSS
 * MySQL
-* NodeJS
-* InquirerJs
+* Express
+* NodeJs
+* Handlebars
+* ORM
+* Heroku
 * Github
 
 ## Description
-The employer tracker application allows a user to manage a company's employees. It allows a user to add and vie departments, roles, employees, as well as update employee roles. 
+This application is a fun burger logger! You can add your favorite burger, and decide whether you want to devour it or if you aren't hungry you can change your mind. 
 
-## Usage
-* To use this application first you would type in employee.js into your terminal.
-* Then a list of options will appear:
-![Application](./images/info.png)
-* You can use your cursor to select which option you would like to see.
-![Role-Table](./images/role.png)
 
 ## Work Involved
 In order to build this application, I utilized MySQL in order to create an employee database and connect it to my local host. I utilized InquirerJs to develop the user prompts, and console.table to print MySQL rows into the console.

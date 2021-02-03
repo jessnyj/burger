@@ -21,7 +21,7 @@
 [Demo](https://burger-eater70.herokuapp.com/)
 
 ## Site Picture
-[Site]()
+![Site](public/assets/img/site-burger.png)
 
 ## Technologies Used
 * javascript
@@ -39,12 +39,28 @@ This application is a fun burger logger! You can add your favorite burger, and d
 
 
 ## Work Involved
-In order to build this application, I utilized MySQL in order to create an employee database and connect it to my local host. I utilized InquirerJs to develop the user prompts, and console.table to print MySQL rows into the console.
+For this application, I developed the site using handlebars and CSS. I developed my database using MySQL. I used ORM in order to transfer my data from my database. I also deployed the site utilizing Heroku. 
 
 ## Code Snippet
-* This code snippet allows for the employee table to be printed into the console.
+* Allows you to update the SQL database by using ORM.
 ```
+ update(table, objColVals, condition, cb) {
+        let queryString = `UPDATE ${table}`;
 
+        queryString += ' SET ';
+        queryString += objToSql(objColVals);
+        queryString += ' WHERE ';
+        queryString += condition;
+
+        console.log(queryString);
+        connection.query(queryString, (err, result) => {
+            if (err) {
+                throw err;
+            }
+
+            cb(result);
+        });
+    },
 ```
 
 ## License

@@ -4,10 +4,10 @@
 </div>
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="col-6">
             <h2 id="notHungry">Not hungry yet</h2>
-            <ol>
+            <ol class="list">
                 {{#each burgers}}
                 {{#unless devoured}}
                 {{> burgers/burger-block devour=true}}
@@ -18,7 +18,7 @@
 
         <div class="col-6">
             <h2 id="yum">Yummy!</h2>
-            <ol>
+            <ol class="list">
                 {{#each burgers}}
                 {{#if devoured}}
                 {{> burgers/burger-block devour=false}}
@@ -28,16 +28,6 @@
         </div>
     </div>
 </div>
-
-
-
-{{!-- <form id="create-form">
-    <div class="mb-3 form-group">
-        <label for="submit" class="form-label">Type in your favorite burger:</label>
-        <input type="text" class="form-control" id="submitBurgerForm" aria-describedby="addBurger">
-        <button type="submit" class="btn btn-primary">Add Burger</button>
-    </div>
-</form> --}}
 
 <div class="form">
     <form id="create-form">

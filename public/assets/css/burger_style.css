@@ -10,7 +10,6 @@ li {
 .create-update-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
 }
 
 .form-group {
@@ -19,17 +18,22 @@ li {
 
 h1 {
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: Georgia;
 }
 
 #notHungry {
-    text-align: left;
+    text-align: center;
 }
 
 #yum {
-    text-align: right;
+    text-align: center;
 }
 
+
 .burgerPic {
+    margin-top: 30px;
     height: 150px;
     width: 150px;
     margin-left: auto;
@@ -49,4 +53,13 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.list {
+    text-align: center;
+    list-style-position: inside;
+}
+
+* {
+    background-color: #F0F0F0;
 }

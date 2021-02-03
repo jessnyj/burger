@@ -18,7 +18,7 @@
 
 ## Deployed Link
 * Click this link to view the site.
-[Demo](https://burger-eater70.herokuapp.com/)
+[Deployed Link](https://burger-eater70.herokuapp.com/)
 
 ## Site Picture
 ![Site](public/assets/img/site-burger.png)

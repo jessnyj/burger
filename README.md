@@ -44,23 +44,7 @@ In order to build this application, I utilized MySQL in order to create an emplo
 ## Code Snippet
 * This code snippet allows for the employee table to be printed into the console.
 ```
-function employeeTable() {
-    connection.query("SELECT * FROM employee", function (err, res) {
 
-        var table = new Table({
-            head: ["ID", "First Name", "Last Name", "Role ID", "Manager ID"],
-            colWidths: [10, 15, 15, 10, 15]
-        });
-
-        for (var i = 0; i < res.length; i++) {
-            table.push(
-                [res[i].id, res[i].first_name, res[i].last_name, res[i].role_id, res[i].manager_id],
-            );
-        }
-        console.log(table.toString());
-        restart()
-    });
-}
 ```
 
 ## License

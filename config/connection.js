@@ -17,3 +17,5 @@ connection.connect((err) => {
 });
 // Export connection for our ORM to use.
 module.exports = connection;
+
+// Portfolio: https://jessnyj.github.io/jessny-portfolio/

@@ -61,5 +61,11 @@ h1 {
 }
 
 * {
-    background-color: #F0F0F0;
+    background-color: #F0F0F0 !important;
+}
+
+.btn {   
+    text-decoration: none;
+    color: white !important; 
+    background-color: green !important;
 }
